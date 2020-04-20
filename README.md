@@ -1,2 +1,2 @@
 # rileyclauss.github.io
-My Website
+Code for my website, just an example website for fun.

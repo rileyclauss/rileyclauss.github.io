@@ -1,0 +1,98 @@
+/* css */
+
+body{
+	
+	margin:0;
+	
+}
+
+.topbar{
+	
+	margin: 0 auto ;
+	width: auto;
+	padding:10 30;
+	font-size: 40px;
+	position:static;
+	overflow:hidden;
+	background-color:#ECEBEB;
+	
+	
+}
+
+.topbar a, .topbar p{
+	
+	display:block;
+	float:right;
+	padding:0;
+	margin:0;
+}
+
+#logo, #logoanim{
+	
+	float:left;
+	font-family: monaco,Consolas,Lucida Console,monospace;
+	margin:0;
+	padding:0;
+}
+
+#logoanim{
+	
+	animation:blinking 1.2s infinite;
+}
+
+@keyframes blinking {
+	
+	0%{     color: #000000;    }
+    49%{    color: #000000; }
+	50%{ color:transparent;}
+	85%{color:transparent;}
+	86%{color:transparent;}
+    100%{   color: #000000;    }
+	
+}
+
+.navbar {
+	margin: auto;
+	width:99%;
+	font-size:16px;
+	background-color:#DCDCDC;
+	text-align:center;
+	overflow: hidden;
+	padding:20 0;
+	position:static;
+}
+.navbar a{	
+	padding: 18 10;
+	width:20%;
+	float: middle;
+	color: #000000;
+	font-family:arial;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {	
+	background-color:#696969;
+	color:black;
+}
+.navbar a.active{
+	color: white;
+	background-color: #4C256A;
+}
+
+.content{
+	margin: 0 10;
+	padding:45px;
+}
+@media screen and (max-width: 700px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    top:0;
+    position: fixed;
+    overflow:hidden;
+  }
+  .navbar a {float: left;}
+  .content {margin-left: 0;}
+}
