@@ -67,6 +67,7 @@ body{
 }
 .navbar ul li a{
 	text-decoration:none;
+	font-family: monaco,Consolas,Lucida Console,monospace;
 	color:black;
 }
 .activeone ~ #navselect{
