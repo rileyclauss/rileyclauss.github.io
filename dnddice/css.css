@@ -1,0 +1,46 @@
+body{
+  padding-left:60px;
+  float:none;
+}
+
+.rollNum{
+  padding-top: 5px;
+
+}
+
+.spacedLb{
+  padding-right:18px;
+}
+.spacedSLb{
+  padding-right:15px;
+}
+.sbs{
+  float:left;
+  padding-right:10px;
+  clear:none;
+}
+#orBox{
+  clear:left;
+}
+#display{
+  padding-left:400px;
+}
+#trackChart{
+  float:right;
+  position:relative;
+}
+#buttonMenuL{
+  max-width:50%;
+}
+table, th, td{
+  border: 1px solid black;
+  text-align:center;
+  padding:5px;
+}
+
+.floatright{
+  float:right;
+}
+.makeBlue{
+  background-color:blue;
+}

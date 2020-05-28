@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Dice Roll Tester</title>
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+  </head>
+  <body onload="init()">
+    <h1>DnD Dice Tester</h1>
+    <p>
+      Select which die you'd like to test with the dropdown menu below, then
+      start rolling. Inputting your rolls will automatically populate the graph
+      and the table below, and show an estimate of how "fair" your dice
+      are.
+    </p>
+    <div class="input sbs">
+      <label for="die">Die: </label>
+      <select name="die" id="dieDD">
+        <option value="d04">d4</option>
+        <option value="d06">d6</option>
+        <option value="d08">d8</option>
+        <option value="d10">d10/%</option>
+        <option value="d12">d12</option>
+        <option value="d20">d20</option>
+      </select>
+      <button type="button" id="begin" onClick="generateMenu()">Begin!</button>
+
+      <div id="rollMenu">
+            <div id="buttonMenuL">
+
+            </div>
+            <div id="buttonMenuR">
+
+            </div>
+      </div>
+      <div id="orBox" class="orBox">
+          <p>----------or----------</p>
+          <label for="rollBox">Rolled: </label>
+          <input type="text" id="rollBox" name="rollBox" placeholder="Enter Value" />
+          <button type="button" id="rollButton" onClick="boxAdd()">Enter</button>
+      </div>
+    </div>
+    <div id="display">
+      <table id="trackTable" class="sbs">
+        <tr>
+          <th>Roll</th>
+          <th>Num</th>
+        </tr>
+      </table>
+      <canvas id="myChart" style="max-width: 1200px;"></canvas>
+    <script>
+
+    </script>
+  </body>
+</html>
