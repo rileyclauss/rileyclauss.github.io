@@ -1,0 +1,228 @@
+body {
+  max-width: 70%;
+  margin: auto;
+  background-color: #525252;
+}
+
+.content {
+  background-color: #a3a3a3;
+}
+
+input[type=number]{
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.topBar {
+  display: flex;
+}
+
+.characterContent {
+  display: flex;
+}
+
+.charNameBox {
+  border: green 3px solid;
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding:4px;
+}
+.charNameBox input{
+  font-size: 30pt;
+  width:auto;
+  overflow: scroll;
+}
+.playerInfoBox {
+  border: red 3px solid;
+  width: 60%;
+  padding: 10px;
+}
+
+.playerInfoBox div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.playerInfoI {
+  width: 12em;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.statsSkillsBar {
+  border: blue 3px solid;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.statsBar {
+  border: orange 3px solid;
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+.statBox {
+  border: black 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10 0;
+  padding: 6 0;
+}
+
+.statBox p {
+  margin: 1 0;
+}
+
+.statBox input {
+  width: 60%;
+  height: 1.3em;
+  font-size: 20pt;
+  margin: 1 0;
+}
+
+.skillsBar {
+  border: purple 3px solid;
+  width: 60%;
+}
+
+.inspBox {
+  border: black 4px solid;
+  padding: 4px;
+  margin: 2px;
+}
+
+.inspBox input {
+  width: 30%;
+}
+
+.proficiencyBonusBox {
+  border: black 4px solid;
+  padding: 4px;
+  margin: 2px;
+}
+
+.proficiencyBonusBox input {
+  width: 30%;
+}
+
+.savingThrowsBox {
+  border: black 4px solid;
+  padding: 4px;
+  margin: 2px;
+}
+
+.savingThrowsI {
+  display: inline-flex;
+  height: auto;
+  padding: 4;
+}
+
+.savingThrowsI p {
+  padding: 0;
+  margin: 0 0 0 4px;
+}
+
+.savingThrowsI input[type=number] {
+  width: 20%;
+  height: 1em;
+  font-size: 16pt;
+}
+
+.skillsBox {
+  margin: 2px;
+  padding: 2px;
+  border: black 4px solid;
+}
+
+.skillsBoxI {
+  display: inline-flex;
+  height: auto;
+  padding: 4;
+}
+
+.skillsBoxI p {
+  padding: 0;
+  margin: 0 0 0 4px;
+}
+
+.skillsBoxI input[type=number] {
+  width: 20%;
+  height: 1em;
+  font-size: 16pt;
+}
+
+.passiveWisdomBox {
+  padding: 6;
+  border: black 4px solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.passiveWisdomBox input {
+  width: 30%;
+}
+
+.proficienciesLanguagesBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: black 4px solid;
+  padding: 4;
+}
+
+.proficienciesLanguagesBar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proficienciesBox {
+  height: 100px;
+  overflow: scroll;
+}
+
+.languagesBox {
+  height: 100px;
+  overflow: scroll;
+}
+
+.combatBar {
+  border: black 4px solid;
+}
+
+.combatStatsBar {
+  border: black 4px solid;
+  margin: 2px;
+}
+
+.ACISBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.ACISBar div {
+  border: black 2px solid;
+  display: flex;
+  flex-direction: column;
+  width:10%;
+  align-items: center;
+}
+
+.ACISBar div input{
+  padding:6px;
+  font-size: 30pt;
+  width:70%;
+}
