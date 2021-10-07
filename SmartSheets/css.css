@@ -143,6 +143,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .skillsBox input[type=number]{
   width:40px;
+  text-size-adjust: none;
+  font-size: calc(10pt + 0.4vw);
 }
 .proficienciesLanguagesBar {
   display: flex;
@@ -341,10 +343,6 @@ input[type=number]::-webkit-outer-spin-button {
     width:100%;
   }
   .skillsBoxI input[type=number]{
-    font-size: calc(12pt + 0.2vw);
-    align-self: center;
-    min-width: 40px;
-    width:1vw;
-    text-size-adjust: none;
+    font-size: 12pt;
   }
 }
