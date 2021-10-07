@@ -1,0 +1,341 @@
+body {
+  max-width: 90vw;
+  margin: auto;
+  background-color: #525252;
+}
+
+.content {
+  background-color: #a3a3a3;
+  height:auto;
+  min-height: 100vh;
+  padding:0vw 2vw 0vw 2vw;
+}
+label{
+  text-align: center;
+}
+input[type=button]{
+  align-items: center;
+  display: inline-flex;
+}
+input[type=number]{
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.topBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.charNameBox {
+  border: black 3px solid;
+  width: 30vw;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding:1vw;
+}
+
+.charNameBox input[type=text]{
+  font-size:calc(20px + 1.5vw);  
+  width:auto;
+  overflow: scroll;
+  text-align: center;
+}
+.playerInfoBox {
+  border: black 3px solid;
+  width: 50vw;
+  min-width: 400px;
+  padding: 1vw;
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.playerInfoI {
+  display: flex;
+  width: 28%;
+  padding: 0vw .5vw;
+  justify-content: space-evenly;
+  flex-flow: column-reverse;
+  align-content: center;
+}
+.playerInfoI input{
+  font-size:calc(10px + .6vw);
+  width:auto;
+  overflow: scroll;
+}
+.characterContent {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.statsSkillsBar {
+  border: black 3px solid;
+  display: flex;
+  flex-direction: row;
+  width:30vw;
+  min-width: 300px;
+  flex-wrap: wrap;
+  height: auto;
+}
+.statsBar {
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+.statBox {
+  border: black 3px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5 0;
+  padding: 6 0;
+}
+.statBox p {
+  margin: 1 0;
+}
+.statBox > input {
+  width: 60%;
+  font-size: 20pt;
+  padding:1px;
+  margin: 1 0;
+}
+.statBox .statSavingThrowBox{
+  display: flex;
+  align-content: center;
+}
+.skillsBar {
+  border: black 3px solid;
+  width: 60%;
+}
+.skillsBar > div{
+    border: black 4px solid;
+    padding: 4px;
+    margin: 2px;
+}
+.skillsBar > div > input[type=number]{
+  width: 20%;
+  height: 1em;
+  font-size: 16pt;
+}
+.skillsBox {
+  margin: 2px;
+  padding: 2px;
+  border: black 4px solid;
+}
+.skillsBoxI {
+  display: inline-flex;
+  height: auto;
+  padding: 4;
+}
+.skillsBoxI p {
+  padding: 0;
+  margin: 0 0 0 4px;
+}
+.skillsBoxI input[type=number] {
+  width: 20%;
+  height: 1em;
+  font-size: 16pt;
+}
+.proficienciesLanguagesBar {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  min-width: 300px;
+  width:100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+  margin:0px;
+}
+.proficienciesLanguagesBar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.proficienciesLanguagesBar div textarea{
+  min-width: 200px;
+  width:100%;
+}
+.proficienciesLanguagesBar div p{
+  margin:0;
+}
+.proficienciesBox {
+  height: 100px;
+  overflow: scroll;
+}
+.languagesBox {
+  height: 100px;
+  overflow: scroll;
+}
+.combatBar {
+  border: black 4px solid;
+  width:28vw;
+  min-width: 300px;
+  height:auto;
+  min-height: 15vh;
+}
+
+.ACISBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 300px;
+}
+.ACISBar > div {
+  margin:1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
+  outline: 2px solid black;
+}
+.ACISBar > div > input{
+  margin-top: 5px;
+  padding:6px;
+  font-size: 30pt;
+  width:70%;
+}
+.hitDiceTotalTxt{
+  font-size: 10pt !important;
+}
+.deathSavesBox *{
+  height:42%;
+  width:100%;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.deathSavesBox p{
+  height:15%;
+  margin:0;
+  padding:0;
+}
+.deathSavesBox > div > div > input{
+  width:100%;
+  margin:0;
+  height:100%;
+}
+.deathSavesBox > div > div{
+  display:flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  width:70%;
+}
+
+.weaponLine{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: center;
+  justify-content: space-around;
+}
+.weaponLine{
+  padding: 0;
+  margin:0;
+}
+.weaponLine > p{
+  margin:0;
+}
+.weaponLine > input{
+  margin: 0 4;
+}
+.weaponName{
+  width:30%;
+}
+.weaponBonus{
+  width:20%;
+}
+.weaponDamage{
+  width:50%;
+}
+.weaponsBox{
+  border: 2px solid black;
+}
+.goldCounters{
+  display: flex;
+  flex-direction: row;
+
+}
+.goldCounters > label{
+  width:25%;
+}
+.goldCounters > input{
+  width:74%;
+}
+.stuffTxt{
+  min-height: 300px;
+  padding:0 0.4vw;
+}
+
+.stuffTxt textarea{
+  min-width: 280px;
+  width:100%;
+  height: 30%;
+}
+
+.traitsAndFeaturesBox{
+  width: 23%;
+  min-width: 300px;
+}
+.traitsBox{
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.traitsBox > *{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  width:48%;
+}
+.traitsBox > * > textarea{
+  height:80px;
+}
+.traitsBox > * label{
+  align-self: center;
+}
+.featuresBox{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.featuresBox textarea{
+  height: 90%;
+  width: 90%;
+}
+.featuresBox > label{
+  align-self: center;
+}
+
+
+@media (max-width: 700px){
+  body{
+    max-width:100%;
+  }
+  .playerInfoI{
+    width:34%;
+  }
+  .combatBar{
+    width:100%;
+  }
+  .statsSkillsBar{
+    width:100%;
+  }
+  .traitsAndFeaturesBox{
+    width:100%;
+  }
+}
