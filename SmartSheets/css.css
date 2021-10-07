@@ -68,6 +68,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size:calc(10px + .6vw);
   width:auto;
   overflow: scroll;
+  text-align: center;
 }
 .characterContent {
   display: flex;
@@ -128,6 +129,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 2px;
   padding: 2px;
   border: black 4px solid;
+  display: flex;
+  flex-flow: column;
 }
 .skillsBoxI {
   display: inline-flex;
@@ -322,6 +325,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+
 @media (max-width: 700px){
   body{
     max-width:100%;
@@ -337,5 +341,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .traitsAndFeaturesBox{
     width:100%;
+  }
+  .skillsBoxI input[type=number]{
+    font-size: calc(12pt + 0.2vw);
+    align-self: center;
+    min-width: 40px;
+    width:1vw;
   }
 }
